@@ -1,0 +1,29 @@
+    
+
+инициализация массива:
+
+	int[] masiv = new int[10];
+
+        for (int i = 0; i < masiv.length; i++) {
+            masiv[i] = i;
+        }
+        System.out.println(Arrays.toString(masiv));	//вывод в консоль
+
+
+инвертирование первоначального массива:
+
+        for(int i = 0; i < masiv.length/2; i++){
+            int temp = masiv[i];
+            masiv[i] = masiv[masiv.length - 1 - i];
+            masiv[masiv.length - 1 - i] = temp;
+        }
+        System.out.println(Arrays.toString(masiv));	//вывод в консоль
+
+
+инвертирование клона первого массива:
+
+        int[] array = new int[10];
+        for(int i = 0; i < masiv.length; i++){
+            array[i] = masiv[masiv.length - 1 - i];
+        }
+        System.out.println(Arrays.toString(array));	//вывод в консоль
